@@ -4,7 +4,7 @@
 import csv
 import requests
 import bs4 as bs
-from prettytable import PrettyTable
+
 import Slack_Push_Notification as Slack
 from datetime import datetime
 import os
@@ -39,7 +39,7 @@ with open(file_path, mode = 'w') as file:
     writer.writerow(['JOB_NAME', 'COMPANY', 'CITY', 'STATE', 'POSTED_DATE (Days Ago)', 'APPLY_LINK'])
 
     #Table to present the Job Details
-    table = PrettyTable(['Job_Name', 'Company', 'Job_URL', 'time'])
+   # table = PrettyTable(['Job_Name', 'Company', 'Job_URL', 'time'])
 
     #Requesting and getting the webpage using requests
     print('\nWeb Scraping in progress...')
