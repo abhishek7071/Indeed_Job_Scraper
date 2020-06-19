@@ -4,7 +4,7 @@
 import csv
 import requests
 import bs4 as bs
-from prettytable import PrettyTable
+import PrettyTable
 import Slack_Push_Notification as Slack
 from datetime import datetime
 import os
